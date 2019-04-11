@@ -1,14 +1,11 @@
-// TODO: figure out why browser esm build isn't done for latest version – i'm getting 2.5.8 instead of 2.5.21
-// import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.0-beta.1/dist/vue.esm.browser.min.js'
-import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.0-beta.1/dist/vue.esm.browser.js'  // dev mode & dev tools
+// import Vue from 'https://unpkg.com/vue@2.6.10/dist/vue.esm.browser.js'
+import Vue from 'https://unpkg.com/vue@2.6.10/dist/vue.esm.browser.min.js'  // dev mode & dev tools
 
-// damn, vuex not ready with process and shit in the build
-// also not latest
-// import { Store, mapGetters, mapActions } from 'https://unpkg.com/vuex@3.0.1/dist/vuex.esm.js'
- // no minified build for vuex :( nor one that works because of references to process.env
+// import Vuex, { Store, mapGetters, mapActions } from './vuex.esm.browser.js'
+import Vuex, { Store, mapGetters, mapActions } from './vuex.esm.browser.min.js'
 
-import Vuex, { Store, mapGetters, mapActions } from './vuex.esm.browser.js'
-import VueRouter from './vue-router.esm.browser.js'
+// import VueRouter from './vue-router.esm.browser.js'
+import VueRouter from './vue-router.esm.browser.min.js'
 
 const App = Vue.component('App', {
   template: `
