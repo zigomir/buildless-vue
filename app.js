@@ -1,11 +1,14 @@
-// import Vue from 'https://unpkg.com/vue@2.6.10/dist/vue.esm.browser.js'
-import Vue from 'https://unpkg.com/vue@2.6.10/dist/vue.esm.browser.min.js'  // dev mode & dev tools
+// unpkg
+// import Vue from 'https://unpkg.com/vue@2.6.10/dist/vue.esm.browser.js' // dev mode & dev tools
+// import Vue from 'https://unpkg.com/vue@2.6.10/dist/vue.esm.browser.min.js'
+// import Vuex, { Store, mapGetters, mapActions } from 'https://unpkg.com/vuex@3.1.1/dist/vuex.esm.browser.min.js'
+// import VueRouter from 'https://unpkg.com/vue-router@3.0.7/dist/vue-router.esm.browser.min.js'
 
-// import Vuex, { Store, mapGetters, mapActions } from './vuex.esm.browser.js'
-import Vuex, { Store, mapGetters, mapActions } from './vuex.esm.browser.min.js'
-
-// import VueRouter from './vue-router.esm.browser.js'
-import VueRouter from './vue-router.esm.browser.min.js'
+// pika
+// import Vue from 'https://cdn.pika.dev/vue/v2' // this won't work because it will pick up runtime version :/
+import Vue from 'https://unpkg.com/vue@2.6.10/dist/vue.esm.browser.min.js'
+import Vuex, { Store, mapGetters, mapActions } from 'https://cdn.pika.dev/vuex/v3'
+import VueRouter from 'https://cdn.pika.dev/vue-router/v3'
 
 const App = Vue.component('App', {
   template: `
@@ -68,7 +71,7 @@ const store = new Store({
   }
 })
 
-const app = new Vue({
+new Vue({
   store,
   router,
   render: h => h(App)

@@ -1,1 +1,0 @@
-../../forks/vuex/dist/vuex.esm.browser.js
