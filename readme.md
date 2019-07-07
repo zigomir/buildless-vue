@@ -17,12 +17,14 @@ import VueRouter from 'https://cdn.pika.dev/vue-router/v3'
 
 work fine.
 
-## DONE
+## Done
 
-I opened similar PR's for [vuex](https://github.com/vuejs/vuex/pull/1533) and [vue-router](https://github.com/vuejs/vue-router/pull/2705).
+I opened PR's for [vuex](https://github.com/vuejs/vuex/pull/1533) and [vue-router](https://github.com/vuejs/vue-router/pull/2705) to 
+build a minified browser ES module.
 
-## TODO
+## To consider
 
 We might also want to build vue browser esm without compiler for smaller file size and instead use [htm](https://github.com/developit/htm) 
-same as @EGOIST already did with [vue-htm](https://github.com/egoist/vue-html). But there is unfortunately known issue 
-with [vue-router](https://github.com/egoist/vue-html/issues/3).
+same as [egoist](https://github.com/egoist) already did with [vue-htm](https://github.com/egoist/vue-html). But there is unfortunately known issue 
+with [vue-router](https://github.com/egoist/vue-html/issues/3). And this also won't be fully compatible vue app because 
+`vue-htm` won't support `v-model`. And probably some other unknown issues.
