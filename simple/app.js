@@ -4,7 +4,7 @@ import Counter from './components/Counter.js'
 
 const App = Vue.component('App', {
   components: {
-    Counter,
+    Counter
   },
   template: `
     <div>

@@ -8,7 +8,7 @@ Vue.use(Vuex)
 
 const App = Vue.component('App', {
   components: {
-    Counter,
+    Counter
   },
   template: `
     <div>
