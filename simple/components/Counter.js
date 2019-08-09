@@ -1,6 +1,8 @@
-import Vue from 'https://unpkg.com/vue@2.6.10/dist/vue.esm.browser.min.js'
+// import Vue from 'https://unpkg.com/vue@2.6.10/dist/vue.esm.browser.min.js'
+import Vue from 'https://unpkg.com/vue@2.6.10/dist/vue.esm.browser.js' // dev mode & dev tools
 
 export default Vue.component('Counter', {
+  name: 'Counter',
   data () {
     return {
       count: 0
